@@ -4,7 +4,7 @@ Python Implementation of the "40 Ladrões" game described  here: https://www.you
 Instructions to run the game:
 
 1. navigate to src (cd src)
-2. create a virtual environment (virtualenv venv)
+2. create a virtual environment (python -m venv virtualenv)
 3. ativate the virtualenv (venv\Scripts\activate)
 3. then install the requirements (pip install -r ../requirements.txt)
 4. go back one level (cd..)
