@@ -1,7 +1,6 @@
 from tkinter import *
 from tkinter import simpledialog
 from tkinter import messagebox
-from tkinter import constants
 
 class PlayerInterface:
     def __init__(self):
@@ -28,9 +27,9 @@ class PlayerInterface:
      
       
       
-      self.orange_circle = PhotoImage(file="src/assets/orange_circle.png")
-      self.blue_circle = PhotoImage(file="src/assets/blue_circle.png")
-      self.white_square = PhotoImage(file="src/assets/white_square.png")
+      self.orange_circle = PhotoImage(file="./src/assets/orange_circle.png")
+      self.blue_circle = PhotoImage(file="./src/assets/blue_circle.png")
+      self.white_square = PhotoImage(file="./src/assets/white_square.png")
       
       self.board_view = []
       for y in range(8):
