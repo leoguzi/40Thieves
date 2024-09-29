@@ -58,6 +58,8 @@ class PlayerInterface:
             self.message_label.grid(row=0, column=0)
             self.turn_label = Label(self.info_frame, bg="azure3", text="Sua vez!", font="arial 24")
             self.turn_label.grid(row=0, column=0)
+            self.send_move_button = Button(self.info_frame, text="Enviar jogada", font="arial 16", bg="azure4", command=self.send_move)
+            self.send_move_button.grid(row=1, column=0)
             
             
             #creates the game menu  
@@ -77,4 +79,8 @@ class PlayerInterface:
     def start_match(self):
       message = "Uma partida foi iniciada!"
       messagebox.showinfo("Nova partida", message, type="ok")
+      
+    def send_move(self):
+      message = "Sua jogada foi enviada!"
+      messagebox.showinfo("Jogada enviada", message, type="ok")
        
