@@ -1,13 +1,16 @@
 from tkinter import *
 from tkinter import simpledialog
 from tkinter import messagebox
+from dog.dog_interface import DogPlayerInterface
+from dog.dog_actor import DogActor
 
-class PlayerInterface:
+class PlayerInterface(DogPlayerInterface):
     def __init__(self):
       self.main_window = Tk()
       self.fill_main_window() # Fill the main window with the game interface
       player_name = simpledialog.askstring(title="Identificação do jogador", prompt="Como você se chama?")
-      message = "Bem vindo ao 40 Ladrões, " + player_name + "!"
+      self.dog_server_interface = DogActor()
+      message = self.dog_server_interface.initialize(player_name, self)
       messagebox.showinfo("Bem vindo!", message, type="ok")
       self.main_window.mainloop()
       
@@ -27,9 +30,9 @@ class PlayerInterface:
      
       
       
-      self.orange_circle = PhotoImage(file="./src/assets/orange_circle.png")
-      self.blue_circle = PhotoImage(file="./src/assets/blue_circle.png")
-      self.white_square = PhotoImage(file="./src/assets/white_square.png")
+      self.orange_circle = PhotoImage(file="assets/orange_circle.png")
+      self.blue_circle = PhotoImage(file="assets/blue_circle.png")
+      self.white_square = PhotoImage(file="assets/white_square.png")
       
       self.board_view = []
       for y in range(8):
