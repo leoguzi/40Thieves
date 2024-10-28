@@ -80,8 +80,13 @@ class PlayerInterface(DogPlayerInterface):
       messagebox.showinfo("Click!", message, type="ok")
       
     def start_match(self):
-      message = "Uma partida foi iniciada!"
-      messagebox.showinfo("Nova partida", message, type="ok")
+      start_status = self.dog_server_interface.start_match(2)
+      message = start_status.get_message()
+      messagebox.showinfo(message=message)
+      
+    def receive_start(self, start_status):
+      message = start_status.get_message()
+      messagebox.showinfo(message=message)
       
     def send_move(self):
       message = "Sua jogada foi enviada!"
