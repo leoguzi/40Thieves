@@ -11,7 +11,7 @@ Instruções para executar o jogo
 1. Navegue até a pasta scr utilizando o comando "cd src".
 2. Crie um ambiente virtual utilizando o comando "python -m venv virtualenv" ou "python3 -m venv virtualenv" (se sua maquina tiver Python3 instalado).
 3. Ative o ambiente virtual utilizando o comando ".\virtualenv\bin\Activate.ps1". Se você não tiver permissão para a execução de scripts no powershell, atribua a mesma utilizando o comando "Set-ExecutionPolicy RemoteSigned".
-4. Instale as dependencias com o comando "python -m pip install -r ../requirements.txt" ou "python3 -m pip install -r ../requirements.txt"(se sua maquina tiver Python3 instalado). Por enquanto esse passo não é necessário, pois o projeto ainda não tem dependências.
+4. Instale as dependencias com o comando "python -m pip install -r ../requirements.txt" ou "python3 -m pip install -r ../requirements.txt"(se sua maquina tiver Python3 instalado).
 5. Volte ao diretorio pai utilizando "cd ..".
 6. Execute o jogo com o comando "python src/forty_thieves.py" ou "python3 src/forty_thieves.py"(se sua maquina tiver Python3 instalado).
 
@@ -20,7 +20,7 @@ Instruções para executar o jogo
 1. Navegue até a pasta scr utilizando o comando "cd src".
 2. Crie um ambiente virtual utilizando o comando "python -m venv virtualenv" ou "python3 -m venv virtualenv" (se sua maquina tiver Python3 instalado).
 3. Ative o ambiente virtual utilizando o comando "./virtualenv/bin/activate". Se você não tiver permissão para a execução de scripts no powershell, atribua a mesma utilizando o comando "chmod +x ./virtualenv/bin/activate".
-4. Instale as dependencias com o comando "python -m pip install -r ../requirements.txt" ou "python3 -m pip install -r ../requirements.txt"(se sua maquina tiver Python3 instalado). Por enquanto esse passo não é necessário, pois o projeto ainda não tem dependências.
+4. Instale as dependencias com o comando "python -m pip install -r ../requirements.txt" ou "python3 -m pip install -r ../requirements.txt"(se sua maquina tiver Python3 instalado).
 5. Volte ao diretorio pai utilizando "cd ..".
 6. Execute o jogo com o comando "python src/forty_thieves.py" ou "python3 src/forty_thieves.py"(se sua maquina tiver Python3 instalado).
 
