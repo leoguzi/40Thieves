@@ -10,10 +10,10 @@ class UiImage:
         self.message = text
 
     def getValue(self, line, column):
-        return self.map[(line - 1)][(column - 1)]
+        return self.map[line][column]
 
     def setValue(self, line, column, value):
-        self.map[(line - 1)][(column - 1)] = value
+        self.map[line][column] = value
 
     def get_selected_position(self):
         return self.selected_position

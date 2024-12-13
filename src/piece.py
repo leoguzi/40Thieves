@@ -5,9 +5,12 @@ class Piece:
         self.position.set_occupant(self)
         self.player.pieces.append(self)
         
-        def set_position(self, a_position):
+    def set_position(self, a_position):
             self.position = a_position
             self.position.set_occupant(self)
             
-        def get_position(self):
+    def get_position(self):
             return self.position
+        
+    def get_owner(self):
+            return self.player

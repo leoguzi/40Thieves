@@ -10,7 +10,7 @@ class PlayerInterface(DogPlayerInterface):
       self.main_window = Tk()
       self.fill_main_window() # Fill the main window with the game interface
       self.board = Board()
-      gameState = self.board.get_game_state()
+      gameState = self.board.get_status()
       self.update_gui(gameState)
       player_name = simpledialog.askstring(title="Identificação do jogador", prompt="Como você se chama?")
       self.dog_server_interface = DogActor()
@@ -34,9 +34,9 @@ class PlayerInterface(DogPlayerInterface):
      
       
       
-      self.orange_circle = PhotoImage(file="./src/assets/orange_circle.png")
-      self.blue_circle = PhotoImage(file="./src/assets/blue_circle.png")
-      self.white_square = PhotoImage(file="./src/assets/white_square.png")
+      self.orange_circle = PhotoImage(file="../src/assets/orange_circle.png")
+      self.blue_circle = PhotoImage(file="../src/assets/blue_circle.png")
+      self.white_square = PhotoImage(file="../src/assets/white_square.png")
       
       self.board_view = []
       for y in range(8):
@@ -95,4 +95,23 @@ class PlayerInterface(DogPlayerInterface):
     def send_move(self):
       message = "Sua jogada foi enviada!"
       messagebox.showinfo("Jogada enviada", message, type="ok")
+      
+    def update_gui(self, gameState):
+      # message = gameState.get_message()
+      # self.message_label.config(text=message)
+      # player1_pieces = gameState.get_player1_pieces()
+      # player2_pieces = gameState.get_player2_pieces()
+      # for piece in player1_pieces:
+      #   line = piece.get_position().get_line()
+      #   column = piece.get_position().get_column()
+      #   self.board_view[line][column].config(image=self.orange_circle)
+      # for piece in player2_pieces:
+      #   line = piece.get_position().get_line()
+      #   column = piece.get_position().get_column()
+      #   self.board_view[line][column].config(image=self.blue_circle)
+      # if gameState.get_status() == 3:
+      #   self.turn_label.config(text="Sua vez!")
+      # else:
+      #   self.turn_label.config(text="Vez do adversário!")
+      pass
        
